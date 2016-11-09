@@ -11,4 +11,7 @@ RUN npm install -g gulp grunt-cli bower typings
 # Install PHP cli
 RUN apt-get install -y php5-cli
 
+# Install additional utilities
+RUN apt-get install -y imagemagick optipng
+
 RUN rm -rf /var/lib/apt/lists/*
